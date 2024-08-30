@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/images/logo.ico/ms-icon-310x310.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="asset/css/giohang.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Giỏ Hàng</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="row-flex">
+            <div class="header-logo">
+              <a href="3TOT.html"><img src="asset/images/logo.jpg" alt="" /></a>
+            </div>
+            <div class="header-nav">
+              <nav>
+                <ul>
+                  <li>
+                    <div class="option"><a href="laptop.html">LAPTOP</a></div>
+                  </li>
+                  <li>
+                    <div class="option"><a href="phukien.html">Phụ Kiện</a></div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-search">
+              <input type="text" placeholder="Tìm kiếm" />
+              <i class="ri-search-line"></i>
+            </div>
+            <div class="header-nav">
+              <nav>
+                <ul>
+                  <li>
+                    <div class="option">
+                      <a href="gioithieu.html">Giới Thiệu</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="option">
+                      <a href="lienhe.html">Liên Hệ</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-cart">
+              <i class="ri-shopping-cart-line" number="0"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="cart-section p-to-top">
+        <div class="container">
+            <div class="row-flex-product-detail">
+                <!-- <p>Giỏ hàng</p> -->
+            </div>
+            <div class="row-grid">
+                <div class="cart-section-left">
+                    <h2 class="main-h2">Giỏ hàng</h2>
+                    <div class="cart-section-left-detail">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Ảnh</th>
+                            <th>Sản phẩm</th>
+                            <th>Thành Tiền</th>
+                            <th>Xóa</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><img style="width:70px" src="asset/images/Loa/loa-vi-tinh-21-enkor-e700-den-thumb-5-600x600.jpg" alt=""></td>
+                            <td>
+                              <div class="product-detail-right-infor">
+                                <h1>Bàn Phím Cơ Có Dây Gaming Razer Huntsman Tournament
+                                  Edition</h1>
+                                <div class="product-item-price">
+                                  <p>3.195.000<sup>đ</sup> <span>3.550.000<sup>đ</sup></span></p>
+                                </div>
+                              </div>
+                              <div class="quantity-control">
+                                <button onclick="decreaseQuantity()">-</button>
+                                <input type="text" id="quantity" value="1" min="1" />
+                                <button onclick="increaseQuantity()">+</button>
+                              </div>
+                            </td>
+                            <td>
+                              <p>6.390.000<sup>đ</sup></p>
+                            </td>
+                            <td>X</td>
+                          </tr>
+                          <tr>
+                            <td><img style="width:70px" src="asset/images/hp3.jpg" alt=""></td>
+                            <td>
+                              <div class="product-detail-right-infor">
+                                <h1>HP Pavilion 15 eg2081TU i5 1240P</h1>
+                                <div class="product-item-price">
+                                  <p>25.490.000<sup>đ</sup> <span>29.590.000<sup>đ</sup></span></p>
+                                </div>
+                              </div>
+                              <div class="quantity-control">
+                                <button onclick="decreaseQuantity()">-</button>
+                                <input type="text" id="quantity" value="1" min="1" />
+                                <button onclick="increaseQuantity()">+</button>
+                              </div>
+                            </td>
+                            <td>
+                              <p>25.490.000 <sup>đ</sup></p>
+                            </td>
+                            <td>X</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div data-v-5598cbab data-v-c8528368 class="divider"></div>
+                      <div data-v-c8528368 class="pricing-info__item pricing-info__total">
+                        <p data-v-c8528368 class="pricing-info__total_title text-black font-base font-normal items-center text-base">Tổng</p>
+                        <p data-v-c8528368 class>
+                          <span data-v-c8528368 class="pricing-info__total total text-black text-base font-bold ">31.880.000đ</span>
+                          <span data-v-c8528368 class="text-xs block discount-r discount-r"> (Đã giảm 4.810.000đ)</span>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="cart-section-right">
+                    <h2 class="main-h2">Thông tin đặt hàng</h2>
+                    <input type="text" placeholder="Họ và tên" class="hoten">
+                    <input type="text" placeholder="Điện thoại" class="dienthoai">
+                    <input type="text" placeholder="Địa chỉ" class="diachi">
+                    <button type="submit" class="dathang">Đặt hàng</button>
+                </div>
+                
+            </div>
+        </div>
+      </section>
+      <script src="asset/js/giohang.js"></script>
+  
+      <footer>
+        <div class="container-footer">
+          <div class="row-grid">
+            <div class="footer-item">
+              <p>Về 3TOT</p>
+              <p><a href="gioithieu.html">Về Chúng Tôi</a></p>
+              <p><a href="lienhe.html">Liên Hệ</a></p>
+            </div>
+            <div class="footer-item">
+              <p>Chính sách</p>
+              <p>Chính sách đổi trả 30 ngày</p>
+              <p>Chính sách khuyến mãi</p>
+            </div>
+            <div class="footer-item">
+              <p>Chăm sóc khách hàng</p>
+              <p><a href="lienhe.html">Hỏi đáp - FAQs</a></p>
+            </div>
+            <div class="footer-item">
+              <p>Hệ thống cửa hàng</p>
+              <p>77 Nguyễn Huệ, Phú Nhuận,TP Huế</p>
+              <p>38 Đống Đa, Phú Nhuận, TP Huế</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

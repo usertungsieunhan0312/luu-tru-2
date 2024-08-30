@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="asset/images/logo.ico/ms-icon-310x310.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="asset/css/product-laptop-hp.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Sản phẩm HP</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row-flex">
+          <div class="header-logo">
+            <a href="3TOT.html"><img src="asset/images/logo.jpg" alt="" /></a>
+          </div>
+          <div class="header-nav">
+            <nav>
+              <ul>
+                <li>
+                  <div class="option"><a href="laptop.html">LAPTOP</a></div>
+                </li>
+                <li>
+                  <div class="option"><a href="phukien.html">Phụ Kiện</a></div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="ri-search-line"></i>
+          </div>
+          <div class="header-nav">
+            <nav>
+              <ul>
+                <li>
+                  <div class="option">
+                    <a href="gioithieu.html">Giới Thiệu</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="option"><a href="lienhe.html">Liên Hệ</a></div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-cart">
+            <i class="ri-shopping-cart-line" number="0"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- nav next -->
+    <div class="company-product">
+      <a class="hp" href="hp.html"
+        ><img src="asset/images/logo-hp.png" alt=""
+      /></a>
+      <a class="asus" href="asus.html"
+        ><img src="asset/images/logo-asus.png" alt=""
+      /></a>
+      <a class="acer" href="acer.html"
+        ><img src="asset/images/logo-acer.png" alt=""
+      /></a>
+      <a class="lenovo" href="lenovo.html"
+        ><img src="asset/images/logo-lenovo.png" alt=""
+      /></a>
+      <a class="dell" href="dell.html"
+        ><img src="asset/images/logo-dell.png" alt=""
+      /></a>
+      <a class="msi" href="msi.html"
+        ><img src="asset/images/logo-msi.png" alt=""
+      /></a>
+      <a class="macbook" href="macbook.html"
+        ><img src="asset/images/logo-macbook.png" alt=""
+      /></a>
+    </div>
+    <main>
+      <div class="centered-container">
+        <div class="container">
+          <div class="images-product">
+            <div class="image-sliders">
+              <div class="image-slider">
+                <img src="asset/images/HP/hp-one.jpg" alt="Hình ảnh 1" />
+              </div>
+              <div class="image-slider">
+                <img src="asset/images/HP/hp-two.jpg" alt="Hình ảnh 2" />
+              </div>
+              <div class="image-slider">
+                <img src="asset/images/HP/hp-three.jpg" alt="Hình ảnh 3" />
+              </div>
+            </div>
+            <div class="slider-arrow">
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+          <script src="asset/js/slider.js"></script>
+
+          <div class="product-info">
+            <p><h2>HP Envy x360 2-in-1 14-es1013dx 2024</h2></p>
+            <p><b>Màn hình:</b> 15.6", Full HD</p>
+            <p><b>CPU:</b> i5, 1240P, 1.7GHz</p>
+            <p><b>Card:</b> Intel Iris Xe</p>
+            <p><b>Pin:</b> 3-cell, 41Wh</p>
+            <p><b>Khối lượng:</b> 1.72 kg</p>
+            <p><b>Giá tiền:</b> <span id="price">20.000.000</span> VND</p>
+            <div class="quantity-control">
+              <p><b><pre>Số lượng:  </pre></b></p>
+              <button onclick="decreaseQuantity()">-</button>
+              <input type="text" id="quantity" value="1" min="1" />
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="btn-add-to-cart" onclick="addToCart()"> <i class="ri-shopping-cart-line" number="0"></i>Thêm Vào Giỏ Hàng</button> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="row-grid">
+          <div class="footer-item">
+            <p>Về 3TOT</p>
+            <p><a href="gioithieu.html">Về Chúng Tôi</a></p>
+            <p><a href="lienhe.html">Liên Hệ</a></p>
+          </div>
+          <div class="footer-item">
+            <p>Chính sách</p>
+            <p>Chính sách đổi trả 30 ngày</p>
+            <p>Chính sách khuyến mãi</p>
+          </div>
+          <div class="footer-item">
+            <p>Chăm sóc khách hàng</p>
+            <p><a href="lienhe.html">Hỏi đáp - FAQs</a></p>
+          </div>
+          <div class="footer-item">
+            <p>Hệ thống cửa hàng</p>
+            <p>77 Nguyễn Huệ, Phú Nhuận,TP Huế</p>
+            <p>38 Đống Đa, Phú Nhuận, TP Huế</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
